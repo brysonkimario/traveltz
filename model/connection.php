@@ -8,12 +8,12 @@ class connection{
     private $db;
 
     public function __construct(){
-        $this->user = 'c86qjllztzm11aex';
-        $this->pass = 'f2lvmah9g0pga2d9';
-        $this->host = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-        $this->db = 'lgqwqt85l9jnps2m';
+        $this->user = 'feD1Y0RWGGtNkP';
+        $this->pass = 'Hokgv2w2FeL-';
+        $this->host = 'localhost';
+        $this->db = 'feD1Y0RWGGtNkP';
 
-        
+
 //        if(!preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
 //        {
 //            $this->host = 'localhost';
@@ -27,7 +27,7 @@ class connection{
     }
 
     private function connect(){
-        
+
 
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
