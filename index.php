@@ -52,14 +52,14 @@ class Index {
 
 
         $file = 'view/'.$action.'.php';
-        
+
 
         if(!file_exists($file)){
             $file = 'view/home.php';
         }
-        
+
         include ($file);
-        
+
         include_once('footer.php');
     }
 
@@ -74,7 +74,7 @@ class Index {
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-       $name = (preg_match('/(localhost)/', $name)) ? $name .'/traveltz' : $name;
+    //   $name = (preg_match('/(localhost)/', $name)) ? $name .'/traveltz' : $name;
 
         return $name;
     }
